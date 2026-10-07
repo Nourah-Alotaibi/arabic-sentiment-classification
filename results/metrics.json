@@ -1,0 +1,55 @@
+{
+  "dataset": "Local arabic_tweets.xlsx; label provenance not independently verified",
+  "audit": {
+    "original_rows": 26461,
+    "retained_unique_rows": 26082,
+    "conflicting_label_rows_removed": 90,
+    "removed_or_duplicate_rows": 379,
+    "class_counts": {
+      "neutral": 8762,
+      "negative": 8762,
+      "positive": 8558
+    },
+    "split_sizes": {
+      "train": 15648,
+      "test": 5217,
+      "validation": 5217
+    },
+    "input_sha256": "4e32752d3c18d7250f2b7e8b6053d333e9d8191a12884730fabac158fd9d5998"
+  },
+  "selected_model": "Word+character TFIDF + LogisticRegression",
+  "selection_metric": "validation macro F1",
+  "test_results": {
+    "RBF-SVM baseline": {
+      "accuracy": 0.617979681809469,
+      "balanced_accuracy": 0.6178533733633098,
+      "macro_f1": 0.6182753459266781,
+      "weighted_f1": 0.6182408220225107,
+      "accuracy_95pct_wilson": [
+        0.6047125618878936,
+        0.6310731780970161
+      ]
+    },
+    "Word+character TFIDF + LogisticRegression": {
+      "accuracy": 0.7084531339850488,
+      "balanced_accuracy": 0.7087517426277962,
+      "macro_f1": 0.7086211386008198,
+      "weighted_f1": 0.708267375913365,
+      "accuracy_95pct_wilson": [
+        0.69597071241378,
+        0.7206287875595576
+      ]
+    }
+  },
+  "legacy_accuracy": 0.615614,
+  "legacy_comparability": "Different deduplication and split; use same-split baseline for improvement claims.",
+  "runtime_seconds": 75.36556720733643,
+  "environment": {
+    "python": "3.12.2",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1",
+    "scipy": "1.18.1",
+    "seed": 42
+  }
+}

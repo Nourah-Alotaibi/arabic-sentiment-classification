@@ -77,4 +77,4 @@ Portfolio project by Nourah Alotaibi. This package refactors the collected proje
 
 ## Follow-up transformer comparison
 
-The frozen transformer achieved 71.55% versus this model’s 70.85% on the same test rows. A paired check gives an accuracy-difference interval of −0.63 to +2.03 percentage points and p=0.312, so a reliable advantage is not established. See [the paired comparison, plot and counts](https://github.com/Nourah-Alotaibi/ai-data-science-portfolio/tree/main/10-arabic-transformers).
+The frozen transformer achieved 71.55% versus this model’s 70.85% on the same test rows. A paired check gives an accuracy-difference interval of −0.63 to +2.03 percentage points and p=0.312, so a reliable advantage is not established. See [the paired comparison, plot and counts](https://github.com/Nourah-Alotaibi/arabic-transformer-sentiment).
